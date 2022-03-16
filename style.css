@@ -5,9 +5,10 @@ body > header:nth-child(2) {
   display: flex;
   background-color: #c8bcc7;
   padding: 2rem;
-  height: 40vw;
+  height: 100%;
   text-align: center;
   justify-content: center;
+  box-shadow: 0px 15px 15px darkgray;
 }
 .header_text {
   display: flex;
@@ -16,6 +17,7 @@ body > header:nth-child(2) {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2vw;
 }
 body > footer:nth-child(4) {
   display: flex;
@@ -43,6 +45,14 @@ body > footer:nth-child(4) > section:nth-child(2) {
   border-radius: 300px;
   background-color: #8e24aa;
 }
+
+nav {
+  padding: 1rem;
+  align-items: baseline;
+  background-color: #c8bcc7;
+  flex-wrap: wrap;
+}
+
 /* Purple Light scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
