@@ -3,12 +3,11 @@ button {
 }
 body > header:nth-child(2) {
   display: flex;
-  background-color: #c8bcc7;
+  background-color: #b5b5b5;
   padding: 2rem;
   height: 100%;
   text-align: center;
   justify-content: center;
-  box-shadow: 0px 15px 15px darkgray;
 }
 .header_text {
   display: flex;
@@ -17,7 +16,7 @@ body > header:nth-child(2) {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2vw;
+  padding: 7vw;
 }
 body > footer:nth-child(4) {
   display: flex;
@@ -43,47 +42,50 @@ body > footer:nth-child(4) > section:nth-child(2) {
   min-width: 300px;
   min-height: 300px;
   border-radius: 300px;
-  background-color: #8e24aa;
+  background-color: #00897b;
 }
 
 nav {
   padding: 1rem;
   align-items: baseline;
-  background-color: #c8bcc7;
+  background-color: #b5b5b5;
   flex-wrap: wrap;
 }
+body > nav:nth-child(1) > a:nth-child(1) {
+  font-size: 2rem;
+}
 
-/* Purple Light scheme (Default) */
+/* Indigo Light scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --primary: #8e24aa;
-  --primary-hover: #7b1fa2;
-  --primary-focus: rgba(142, 36, 170, 0.125);
+  --primary: #1e265c;
+  --primary-hover: #303f9f;
+  --primary-focus: rgba(57, 73, 171, 0.125);
   --primary-inverse: #fff;
 }
 
-/* Purple Dark scheme (Auto) */
+/* Indigo Dark scheme (Auto) */
 /* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --primary: #8e24aa;
-    --primary-hover: #9c27b0;
-    --primary-focus: rgba(142, 36, 170, 0.25);
+    --primary: #3949ab;
+    --primary-hover: #3f51b5;
+    --primary-focus: rgba(57, 73, 171, 0.25);
     --primary-inverse: #fff;
   }
 }
 
-/* Purple Dark scheme (Forced) */
+/* Indigo Dark scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
 [data-theme="dark"] {
-  --primary: #8e24aa;
-  --primary-hover: #9c27b0;
-  --primary-focus: rgba(142, 36, 170, 0.25);
+  --primary: #3949ab;
+  --primary-hover: #3f51b5;
+  --primary-focus: rgba(57, 73, 171, 0.25);
   --primary-inverse: #fff;
 }
 
-/* Purple (Common styles) */
+/* Indigo (Common styles) */
 :root {
   --form-element-active-border-color: var(--primary);
   --form-element-focus-color: var(--primary-focus);
